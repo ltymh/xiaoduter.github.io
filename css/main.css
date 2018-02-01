@@ -1090,7 +1090,7 @@ pre .javascript .function {
   bottom: 19px;
 }
 .header {
-  background: url("http://p3g9gof7f.bkt.clouddn.com/581DDE9137F3AA944DDA86074FA84923.jpg");
+  background: transparent;
 }
 .header-inner {
   position: relative;
@@ -1944,7 +1944,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ff2037;
+  background: #58e708;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3025,7 +3025,4 @@ hr {
     width: auto;
     text-align: center;
   }
-}
-body {
-  background: url("/images/beijing.jpg");
 }
