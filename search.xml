@@ -1,11 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[写在最前面]]></title>
-    <url>%2F2018%2F02%2F01%2Ffirst%2F</url>
-    <content type="text"><![CDATA[hello，大家好这是我的第一个博客的第一篇，这篇博客会一直置顶，讲解一些泛泛的东西，可能不是很细，但是应该会比较全面的介绍整个博客的大概。 写这个博客主要有两个方面的作用，其中最主要的是作为技术类的分享，分享平时学习中遇到的一些问题或者新发现。第二便是发表一些自己对于某件事的看法（发发牢骚啊啥的，嘿嘿）。点击网页任何地方会有红心出现哦。 this is my first blog 这个博客是通过hexo+github搭建的，github作为服务器,hexo自动生成网页框架。 this is baidu博客编辑是用hexo-admin在线编辑，使用markdown语法今天解决了hexo d报错的问题 是在hexo-admin添加密码之后报错，然后在知乎上网址查看主要的界面优化使用了这个[网址](http://blog.csdn.net/qq_33699981/article/details/72716951)里面的内容。主题的美化还有[这里](http://blog.csdn.net/fanxiaobin577328725/article/details/79209975)有详细的讲解（部分） 还有一些比较重要的网址，但是没有贴在这里，等之后有时间再贴上来。 评论系统使用来必力，网上教程很多在这里不再赘述。更改背景 首先找到一个背景图片放到 hexo（hexo工程文件）-&gt; themes -&gt; next -&gt; source -&gt; images 的路径下； hexo（hexo工程文件）-&gt; themes -&gt; next -&gt; source -&gt; css -&gt; _custom ，找到路径下的custom.styl文件，在文件的最上方加上一代码 body { background:url(/images/backGround.jpg（这是你之前加的背景图片的名字）);} 就完事了。 1下面图片以qq空间相册作为图床 1下面图片以七牛云作为图床 END]]></content>
-  </entry>
-  <entry>
     <title><![CDATA[markdown]]></title>
     <url>%2F2018%2F02%2F01%2Fmarkdown%2F</url>
     <content type="text"><![CDATA[markdown部分讲解：有关markdown的部分知识。 =是最高级标题 -是二级标题 他们都放在标题下面，像下划线那样，但是另起一行。 尖括号内br是换行，或者连敲两个以上空格然后回车 有序序列 1.空格接内容 111 222 无序序列 *空格接内容 111 222 可以序列表格嵌套]]></content>
@@ -14,6 +9,11 @@
     <title><![CDATA[Linux相关知识]]></title>
     <url>%2F2018%2F01%2F31%2FLinux%E7%9B%B8%E5%85%B3%E7%9F%A5%E8%AF%86%2F</url>
     <content type="text"><![CDATA[在vim下搜索内容步骤： 命令模式下使用/user就可以匹配文档中user这个单词n调到下一个，N跳到上一个？user表示从末尾到开始搜索]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[写在最前面]]></title>
+    <url>%2F2018%2F01%2F31%2Ffirst%2F</url>
+    <content type="text"><![CDATA[hello，大家好这是我的第一个博客的第一篇，这篇博客会一直置顶，讲解一些泛泛的东西，可能不是很细，但是应该会比较全面的介绍整个博客的大概。 写这个博客主要有两个方面的作用，其中最主要的是作为技术类的分享，分享平时学习中遇到的一些问题或者新发现。第二便是发表一些自己对于某件事的看法（发发牢骚啊啥的，嘿嘿）。点击网页任何地方会有红心出现哦。 this is my first blog 这个博客是通过hexo+github搭建的，github作为服务器,hexo自动生成网页框架。置顶的链接在[这里](http://www.netcan666.com/2015/11/22/%E8%A7%A3%E5%86%B3Hexo%E7%BD%AE%E9%A1%B6%E9%97%AE%E9%A2%98/)。this is baidu博客编辑是用hexo-admin在线编辑，使用markdown语法今天解决了hexo d报错的问题 是在hexo-admin添加密码之后报错，然后在知乎上网址查看主要的界面优化使用了这个[网址](http://blog.csdn.net/qq_33699981/article/details/72716951)里面的内容。主题的美化还有[这里](http://blog.csdn.net/fanxiaobin577328725/article/details/79209975)有详细的讲解（部分） 还有一些比较重要的网址，但是没有贴在这里，等之后有时间再贴上来。 评论系统使用来必力，网上教程很多在这里不再赘述。更改背景 首先找到一个背景图片放到 hexo（hexo工程文件）-&gt; themes -&gt; next -&gt; source -&gt; images 的路径下； hexo（hexo工程文件）-&gt; themes -&gt; next -&gt; source -&gt; css -&gt; _custom ，找到路径下的custom.styl文件，在文件的最上方加上一代码 body { background:url(/images/backGround.jpg（这是你之前加的背景图片的名字）);} 就完事了。 1下面图片以qq空间相册作为图床 1下面图片以七牛云作为图床 END]]></content>
   </entry>
   <entry>
     <title><![CDATA[Hello World]]></title>
