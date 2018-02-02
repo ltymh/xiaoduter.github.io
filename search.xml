@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[随笔感想]]></title>
+    <url>%2F2018%2F02%2F02%2F%E9%9A%8F%E7%AC%94%E6%84%9F%E6%83%B3%2F</url>
+    <content type="text"><![CDATA[初闻不识曲中意，再听已是曲中人。]]></content>
+  </entry>
+  <entry>
     <title><![CDATA[python进阶]]></title>
     <url>%2F2018%2F02%2F01%2Fpython%E8%BF%9B%E9%98%B6%2F</url>
-    <content type="text"><![CDATA[做好我的博客，进行了许多美化之后，又想到还打算要学的Python，Java，网络安全等许多知识还没有深入学习。终于体会到了学无止境这个词的含义。不说了，开始学习Python吧！之前看过Python的一本书，了解了Python的许多基本语法，写了一个简单的爬虫，但是好久不用，许多地方已经忘了。现在就在重拾的基础上进阶吧！ 开始学习吧 VIM有模式：Esc到Normal；Normal下i到编辑；Normal下:到命令行。]]></content>
+    <content type="text"><![CDATA[做好我的博客，进行了许多美化之后，又想到还打算要学的Python，Java，网络安全等许多知识还没有深入学习。终于体会到了学无止境这个词的含义。不说了，开始学习Python吧！之前看过Python的一本书，了解了Python的许多基本语法，写了一个简单的爬虫，但是好久不用，许多地方已经忘了。现在就在重拾的基础上进阶吧！ 开始学习吧]]></content>
       <tags>
         <tag>学习</tag>
       </tags>
@@ -11,7 +16,7 @@
   <entry>
     <title><![CDATA[markdown]]></title>
     <url>%2F2018%2F02%2F01%2Fmarkdown%2F</url>
-    <content type="text"><![CDATA[markdown部分讲解：有关markdown的部分知识。 =是最高级标题 -是二级标题 他们都放在标题下面，像下划线那样，但是另起一行。 尖括号内br是换行，或者连敲两个以上空格然后回车 有序序列 1.空格接内容 111 222 无序序列 *空格接内容 111 222 可以序列表格嵌套]]></content>
+    <content type="text"><![CDATA[markdown部分讲解：有关markdown的部分知识。 参考网址 =是最高级标题 -是二级标题 他们都放在标题下面，像下划线那样，但是另起一行。 尖括号内br是换行，或者连敲两个以上空格然后回车 有序序列 1.空格接内容 111 222 无序序列 *空格接内容 111 222 可以序列表格嵌套]]></content>
       <tags>
         <tag>学习</tag>
       </tags>
@@ -19,7 +24,7 @@
   <entry>
     <title><![CDATA[Linux相关知识]]></title>
     <url>%2F2018%2F01%2F31%2FLinux%E7%9B%B8%E5%85%B3%E7%9F%A5%E8%AF%86%2F</url>
-    <content type="text"><![CDATA[在vim下搜索内容步骤： 命令模式下使用/user就可以匹配文档中user这个单词n调到下一个，N跳到上一个？user表示从末尾到开始搜索 vim教程下载]]></content>
+    <content type="text"><![CDATA[在vim下搜索内容步骤： 命令模式下使用/user就可以匹配文档中user这个单词n调到下一个，N跳到上一个？user表示从末尾到开始搜索 1vim教程下载VIM有模式：Esc到Normal；Normal下i到编辑；Normal下:到命令行。normal模式下: 使用h j k l表示左下上右。x删除当前字符，dd删除当前行，u撤销最近的一次操作，ctrl+r恢复最近一次操作。ZZ保存文件并退出。o相当于i+回车(插入并到下一行)，O是上面a和i的区别在于，a是在光标右边插入，i是在左边，A是当前行末尾插入I在当前行的开始处添加文本(非空字符的行首)R是替换(覆盖)当前光标位置及后面的若干文本J是合并光标所在行及下一行为一行(依然在命令模式)&amp;是移动到行位 2命令模式下 :help 是获取帮助， :help subject 是获取某一条指令的帮助。遇到重复操作时，可以录制一段键盘宏：q命令假设我们的文件中有如下几行。1234stdio.h fcntl.h unistd.h stdlib.h 我们希望将其编辑为： 12345678include “stdio.h” include ”fcntl.h” include ”unistd.h” include ”stdlib.h”``` 首先将光标移动到第一行的开始。 然后输入如下的命令： qa ^ i#include “ $ a” j q ```这样就录好了一段宏，宏名为a。之后执行3次这个宏：3@a]]></content>
       <tags>
         <tag>linux</tag>
       </tags>

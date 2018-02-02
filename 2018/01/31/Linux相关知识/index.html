@@ -87,7 +87,7 @@
 <meta property="og:site_name" content="llym的博客">
 <meta property="og:description" content="在vim下搜索内容步骤：">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-02-01T09:02:56.121Z">
+<meta property="og:updated_time" content="2018-02-02T06:06:55.883Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Linux相关知识">
 <meta name="twitter:description" content="在vim下搜索内容步骤：">
@@ -298,7 +298,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="严文">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="http://p3g9gof7f.bkt.clouddn.com/iconfont-shipin.png">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -360,11 +360,25 @@
       
 
       
-        <h2 id="在vim下搜索内容步骤："><a href="#在vim下搜索内容步骤：" class="headerlink" title="在vim下搜索内容步骤："></a>在vim下搜索内容步骤：</h2><a id="more"></a>
+        <h3 id="在vim下搜索内容步骤："><a href="#在vim下搜索内容步骤：" class="headerlink" title="在vim下搜索内容步骤："></a>在vim下搜索内容步骤：</h3><a id="more"></a>
 <blockquote>
 <p>命令模式下使用/user就可以匹配文档中user这个单词<br>n调到下一个，N跳到上一个<br>？user表示从末尾到开始搜索</p>
-<p>vim教程<strong><a href="http://p3g9gof7f.bkt.clouddn.com/gVim-%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B_Gnrsu.cn_.doc" target="_blank" rel="noopener">下载</a></strong></p>
+<h3 id="1"><a href="#1" class="headerlink" title="1"></a>1</h3><p>vim教程<strong><a href="http://p3g9gof7f.bkt.clouddn.com/gVim-%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B_Gnrsu.cn_.doc" target="_blank" rel="noopener">下载</a></strong><br>VIM有模式：<strong>Esc</strong>到<strong>Normal</strong>；Normal下<strong>i</strong>到<strong>编辑</strong>；Normal下<strong>:</strong>到<strong>命令行</strong>。<br><br>normal模式下:</p>
+<blockquote>
+<p>使用h j k l表示左下上右。<br><br>x删除当前字符，dd删除当前行，u撤销最近的一次操作，ctrl+r恢复最近一次操作。<br><br>ZZ保存文件并退出。<br><br>o相当于i+回车(插入并到下一行)，O是上面<br><br>a和i的区别在于，a是在光标右边插入，i是在左边，A是当前行末尾插入<br>I在当前行的开始处添加文本(非空字符的行首)<br><br>R是替换(覆盖)当前光标位置及后面的若干文本<br><br>J是合并光标所在行及下一行为一行(依然在命令模式)<br><br>&amp;是移动到行位<br></p>
 </blockquote>
+</blockquote>
+<h3 id="2"><a href="#2" class="headerlink" title="2"></a>2</h3><p>命令模式下 :help 是获取帮助， :help subject 是获取某一条指令的帮助。<br><br>遇到重复操作时，可以录制一段键盘宏：q命令<br>假设我们的文件中有如下几行。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">stdio.h </span><br><span class="line">fcntl.h </span><br><span class="line">unistd.h </span><br><span class="line">stdlib.h</span><br></pre></td></tr></table></figure></p>
+<p>我们希望将其编辑为： </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">include “stdio.h” </span><br><span class="line">include ”fcntl.h” </span><br><span class="line">include ”unistd.h” </span><br><span class="line">include ”stdlib.h”</span><br><span class="line">``` </span><br><span class="line"></span><br><span class="line">首先将光标移动到第一行的开始。 </span><br><span class="line">然后输入如下的命令：</span><br></pre></td></tr></table></figure>
+<pre><code>qa
+^
+i#include “
+$
+a”
+j
+q
+</code></pre><p>```<br>这样就录好了一段宏，宏名为a。<br>之后执行3次这个宏：3@a</p>
 
       
     </div>
@@ -504,6 +518,10 @@ var jiathis_config={
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
+              <img class="site-author-image" itemprop="image"
+                src="http://p3g9gof7f.bkt.clouddn.com/iconfont-shipin.png"
+                alt="严文" />
+            
               <p class="site-author-name" itemprop="name">严文</p>
               <p class="site-description motion-element" itemprop="description"></p>
           </div>
@@ -515,7 +533,7 @@ var jiathis_config={
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-count">6</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -561,7 +579,7 @@ var jiathis_config={
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#在vim下搜索内容步骤："><span class="nav-number">1.</span> <span class="nav-text">在vim下搜索内容步骤：</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#在vim下搜索内容步骤："><span class="nav-number">1.</span> <span class="nav-text">在vim下搜索内容步骤：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1"><span class="nav-number">2.</span> <span class="nav-text">1</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2"><span class="nav-number">3.</span> <span class="nav-text">2</span></a></li></ol></div>
             
 
           </div>
