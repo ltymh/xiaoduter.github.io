@@ -87,7 +87,7 @@
 <meta property="og:site_name" content="llym的博客">
 <meta property="og:description" content="做好我的博客，进行了许多美化之后，又想到还打算要学的Python，Java，网络安全等许多知识还没有深入学习。终于体会到了学无止境这个词的含义。不说了，开始学习Python吧！">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-02-02T04:37:23.807Z">
+<meta property="og:updated_time" content="2018-02-04T10:20:13.850Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="python进阶">
 <meta name="twitter:description" content="做好我的博客，进行了许多美化之后，又想到还打算要学的Python，Java，网络安全等许多知识还没有深入学习。终于体会到了学无止境这个词的含义。不说了，开始学习Python吧！">
@@ -363,7 +363,56 @@
         <blockquote>
 <p>做好我的博客，进行了许多美化之后，又想到还打算要学的Python，Java，网络安全等许多知识还没有深入学习。终于体会到了学无止境这个词的含义。不说了，开始学习Python吧！<br><a id="more"></a><br>之前看过Python的一本书，了解了Python的许多基本语法，写了一个简单的爬虫，但是好久不用，许多地方已经忘了。现在就在重拾的基础上进阶吧！<br></p>
 </blockquote>
-<p><strong><em>开始学习吧</em></strong></p>
+<h3 id="开始学习吧"><a href="#开始学习吧" class="headerlink" title="开始学习吧"></a>开始学习吧</h3><blockquote>
+<p>学习Python就必须用到IDE，下载Python自带的shell编写很不方便，自带的IDE又不太想用，正好看到推荐里面可以用VIM编写，再加上之前一直想学习vim来着就把vim用法又看了一下。在我之前的博客里写到了如何使用vim部分操作，感兴趣的可以看一下。<br>找了三个教程分别是<strong><a href="http://blog.csdn.net/m18903718781/article/details/78428878" target="_blank" rel="noopener">CSDN</a></strong>，<strong><a href="https://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000" target="_blank" rel="noopener">廖雪峰</a></strong>和<strong><a href="http://www.runoob.com/python/python-100-examples.html" target="_blank" rel="noopener">菜鸟教程</a></strong>。  </p>
+</blockquote>
+<hr>
+<h3 id="先介绍一下基本点的东西"><a href="#先介绍一下基本点的东西" class="headerlink" title="先介绍一下基本点的东西"></a>先介绍一下基本点的东西</h3><blockquote>
+<ul>
+<li><p>python基础</p>
+<ul>
+<li>占位符形式，print(“hello %s, %s” %(‘world’,’yanwen’))。</li>
+<li>format()方法，print(“hello {0},{1:.1f}”.format(‘world’,17.25))//.1f是一不是L，表示小数点后几位。</li>
+<li>list[列表]和tuple(元组)，列表追加用append()函数，元组和列表的区别是一旦初始化就不能修改。（但是如果元组里面有元素是列表的话，列表里面的内容可变，通过类似二维数组访问的方式。访问元组和列表都用string[]）。</li>
+<li>条件判断缩进要一致，不用括号，用相同的缩进，例if num&gt;0: 换行缩进内容。</li>
+<li>循环 for x in list。list(range(5))生成0到5的序列然后转化为列表。</li>
+<li>dict字典d{‘string’:number,’string2’:number2}，查询用[]。<br>增加用d[‘string’]=number。删除用d.pop[‘string’]。</li>
+<li>set相当于没有重复值的list。s=set([1,2,3])。增加通过add()函数，删除通过remove()函数</li>
+<li>对于不变对象来说，调用对象自身的任意方法，也不会改变该对象自身的内容。相反，这些方法会创建新的对象并返回，这样，就保证了不可变对象本身永远是不可变的（字符串就是一种不变对象）。<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"> &gt;&gt;&gt; a = &apos;abc&apos;</span><br><span class="line">&gt;&gt;&gt; a.replace(&apos;a&apos;, &apos;A&apos;)</span><br><span class="line">&apos;Abc&apos;</span><br><span class="line">&gt;&gt;&gt; a</span><br><span class="line">&apos;abc&apos;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p>函数</p>
+<ul>
+<li>def name(): 换行缩进内容。</li>
+<li>默认参数：定义默认参数要牢记一点：默认参数必须指向不变对象！</li>
+<li>可变参数：一是参数作为一个list或者tuple传进来，二是在参数名字前面加上*号，表示参数个数可变。<br>在已经有一个list存在的情况下，在list名字前加*号，就可以把list或者tuple的元素变成可变参数传进去。</li>
+<li>关键字参数和命名关键字参数，在这里不详细介绍。</li>
+<li>递归函数：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">def fact(n):</span><br><span class="line">if n==1:</span><br><span class="line">    return 1</span><br><span class="line">return n * fact(n - 1)</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<h3 id="高级特性"><a href="#高级特性" class="headerlink" title="高级特性"></a>高级特性</h3><blockquote>
+<ul>
+<li>切片<ul>
+<li>列表里面L[:3]表示L[0],L[1],L[2]三个元素，L[2:3]表示L[2],一个元素。  </li>
+<li>或者倒着取，为L[-2:]，L[-2,-1]。  </li>
+<li>L[:10:2],表示前十个数，每两个取一次。（0,1,,2……9）就取（0,2,4,6,8）  </li>
+<li>L[:]表示复制一个L。<br>tuple同样可以切片操作。</li>
+</ul>
+</li>
+<li>迭代，python里面好多对象都可以用到for in来进行迭代。</li>
+<li>列表生成式<ul>
+<li>[x * x for x in range(1, 11)]<br>[1, 4, 9, 16, 25, 36, 49, 64, 81, 100]</li>
+<li>[x * x for x in range(1, 11) if x % 2 == 0]<br>[4, 16, 36, 64, 100]</li>
+<li>还可以使用两层循环，可以生成全排列：<br>[m + n for m in ‘ABC’ for n in ‘XYZ’]<br>[‘AX’, ‘AY’, ‘AZ’, ‘BX’, ‘BY’, ‘BZ’, ‘CX’, ‘CY’, ‘CZ’]</li>
+</ul>
+</li>
+<li>生成器，从生成式变化得来。<br>生成式：L=[x*x for x in range(10)]<br>生成器：L=(x*x for x in range(10))<br>通过next(L)打印出来，实际并不这样用，因为这样很繁琐，一般用循环迭代。</li>
+</ul>
+</blockquote>
 
       
     </div>
@@ -489,8 +538,17 @@ var jiathis_config={
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -545,6 +603,22 @@ var jiathis_config={
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#开始学习吧"><span class="nav-number">1.</span> <span class="nav-text">开始学习吧</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#先介绍一下基本点的东西"><span class="nav-number">2.</span> <span class="nav-text">先介绍一下基本点的东西</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#高级特性"><span class="nav-number">3.</span> <span class="nav-text">高级特性</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
